@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap')
+    
+*
+    padding: 0
+    margin: 0
+    scroll-behavior: smooth
+    box-sizing: border-box
+html
+    font-size: 20px
+
+body
+    font-family: 'Mulish', sans-serif
+    background: #23272f
+main
+    display: flex
+
+.navbar
+    width: fit-content
+    position: fixed
+    &__list
+        list-style-type: none
+        &--item
+        &--anchor
+            padding: 0.5rem 2rem
+            display: block
+            text-decoration: none
+            color: #fff
+            &:hover
+                background: rgba(88,175,223,.1)
+    &__logo
+        color: #149eca
+        width: 40px
+        display: block
+    &__title
+        color: #fff
+    &__container
+        display: flex
+        gap: 1rem
+        padding: 1rem
+        justify-content: center
+        align-items: center
+        height: 10vh
+    &__content
+        // overflow-y: scroll
+        height: 90vh
+
+.documentation
+    position: relative
+    left: 350px
+
+.content
+    padding: 2rem
+    padding-right: 3rem
+    color: #fff
+    border-bottom: 1px solid #343a46
+    &__title
+        font-size: 2rem
+    &__paragraph
+        margin-top: 1rem
+        max-width: 800px
+    &__wordcode
+        background: #2f333c
+        padding: 0rem 0.2rem
+        width: fit-content
+    &__code
+        padding: 1rem
+        background: #16181d
+        margin-top: 1rem
+        display: block
+    &__subtitle
+        margin-top: 1rem
+
+
+.list
+    margin-top: 1rem
+    color: #149eca
+    &__item
+        &> ul
+            margin-left: 2rem
+            margin-top: 0.5rem
+            &:hover
+                text-decoration: underline
+                cursor: pointer
+
+@media screen and ( max-width: 1194px )
+    body
+        padding-left: 1rem
+        padding-right: 1rem
+    .navbar
+        display: none
+    .documentation
+        left: auto
+        max-width: 100%
+    .content
+        padding: 0.5rem
+        &__paragraph
+            max-width: 90%
+    
